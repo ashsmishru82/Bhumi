@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>SCSS pratice</title>
+        <link rel="stylesheet" href="stylesss.css" type="text/css">
+       
+    </head>
+
+    <body >
+        <div class="starting" id="menu_screen">
+            <h1>Welcome to Greeting Card Website</h1>
+            <p id="p1">Enter the message you need to display on the greeting card and choose any of the below template</p>
+            
+            <div class="text_input_1">
+            
+                <textarea placeholder="Enter the message here, minimum 50 words" rows="4" cols="50"></textarea>
+                <span> <button type="button" onclick="write_message" id="button1">Done</button>
+            </div>
+
+            <br>
+            <br>
+            <div >
+                <img src="D:\fellow\card1.PNG" width="30%" height="30%" onclick="change_theme()">
+            </div>
+        </div>
+        <div class="container" id="theme_1">     
+            <div class="photo_1">  
+                <img class="img_pic"src="http://designermag.org/wp-content/uploads/2014/09/Handmade-greeting-Card-accessories.jpg">
+            </div>
+            <div class="para_1">
+                <p class="paragraph1">"Happy birthday to one of the nicest people I know. Your birth has been a blessing to those around you."<p>
+            </div>
+
+            <br>
+            <br>
+        </div>
+        
+            
+
+           
+        <script>
+            function change_theme(){
+                document.getElementById("menu_screen").style.display="none";
+                document.getElementById("theme_1").style.display="block";
+            }
+        </script>
+    </body>
+</html>
+
+
